@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,600&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Domine', serif;
+font-family: 'Poppins', sans-serif;
+/* overflow: hidden; */
+}
+ .header{
+   width: 100%;
+   height: 10vh;
+   display: flex;
+
+   justify-content: center;
+   align-items: center; 
+   position: fixed;
+   top: 0%;
+   z-index: 9999;
+   background-color: white;
+   border-bottom: 2px solid lightgray;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     width: 100%;
+     padding: 0px 50px;
+
+   
+}
+.logo h1{
+    color: black;
+    font-family: 'Domine', serif;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap:1rem;
+}
+a{
+    text-decoration: none;
+}
+.links a li{
+    list-style: none;
+  
+    padding: 0.5rem 1rem;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.links a li:hover{
+    background-color: lightgray;
+    border-radius: 4px;
+    color: black;
+}
+.mob-menu{
+    display: none; 
+}
+.bg{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.466)), url("./images/hero.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin-top: 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-text h1{
+    font-size: 45px;
+    color: white;
+    font-family: 'Domine', serif;
+    margin: 30px 0px;
+}
+.hero-text p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.btn-container{
+    margin-top: 20px;
+}
+.about{
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0.8rem 2rem;
+}
+.contact{
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0.8rem 2rem;
+    margin-right: 12px;
+}
+.contact:hover{
+    background-color: white;
+    color: black;
+}
+.about:hover{
+    background-color: black;
+    color: white;
+    
+}
+.container{
+    width: 100%;
+    /* height: 80vh; */
+    padding: 7rem 0px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-image: url("./images/frames-for-your-heart-2d4lAQAlbDA-unsplash.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ flex-wrap: wrap-reverse;
+
+}
+.text-container{
+    width: 500px;
+    height: 322px;
+    /* border: 2px solid red; */
+      display: flex;
+      justify-content:center;
+      align-items: flex-start;
+      background-color: white;
+      flex-direction: column;
+      /* padding:2.4rem 3rem; */
+      padding: 1rem 1rem;
+    
+}
+.text-container h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 38px;
+    margin-bottom: 12px;
+    color: black;
+}
+.img-container{
+    width: 500px;
+    height: 354px;
+
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-container p{
+        font-size: 15px;
+        color: rgba(117, 117, 117, 0.781);
+}
+.text-container button{
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    margin-top: 12px;
+}
+.card-container{
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 5rem;
+    padding: 5rem 0rem;
+}
+.card-box{
+    width: 350px;
+    /* border: 2px solid red; */
+    padding: 0rem 3rem 0rem 0rem;
+    position: relative;
+
+}
+.card-item{
+ width: 100%;
+  /* border: 2px solid purple; */
+  /* padding: 0rem 3rem 0rem 0rem; */
+  position: relative;
+}
+.card-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-box >.card-item::after{
+    position: absolute;
+    background-color: black;
+    content: '';
+   width: 100%;
+   height: auto;
+   right: 0;
+   /* bottom: 5%; */
+    top: 10%;
+    z-index:-1;
+    visibility: visible;
+    transition: all 0.3s ease 0s;
+}
+.card-box:hover.card-box >.card-item::after{
+ right: -20px;
+ bottom: -5px;
+  visibility: visible;
+  opacity: 1;
+  color: white;
+}
+.card-detail{
+    padding: 1rem 0px;
+}
+.card-detail h2{
+ font-size: 17px;
+ font-family: 'Poppins', sans-serif;
+}
+.card-detail p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color:gray;
+}
+.card-box:hover .card-detail{
+    color: white;
+    margin-left: 30px;
+    padding: 1rem 0px;
+}
+.agent-text{
+    text-align: center;
+    margin-top: 12px;
+}
+.agt{
+    color: black;
+}
+.agent-text p{
+     padding:1rem 2rem;
+    color:gray;
+
+}
+.agent{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.agent-1{
+    position: relative;
+    width: 320px;
+    height: 400px;
+
+}
+.agent-2{
+    position: relative;
+    width: 320px;
+    height: 400px;
+   
+}
+.agent-3{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    
+}
+.agent-container-1{
+    width: 300px;
+    height: 400px;
+    background-image: url("./images/1.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   /* background-position-x: 60%; */
+   background-position: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    overflow: hidden;
+    /* background-size: 100% 100%; */
+}
+.one-1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    right: -100%;
+    transition: 1.5s;
+
+}
+.one-1 div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    white-space: nowrap;
+}
+.one-1 div p{
+    color: white;
+
+}
+div h1{
+    color: white;
+    font-family: 'Domine', serif;
+}
+.two-1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    transition: 1.5s;
+    right: -100%;
+}
+.agent-container-1:hover .one-1{
+ right: 0;
+}
+.agent-container-1:hover .two-1{
+    right: 100%;
+}
+.agent-container-2{
+    width: 300px;
+    height: 400px;
+    background-image: url("./images/2.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position-x: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    overflow: hidden;
+    /* background-size: 100% 100%; */
+}
+.one-2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    right: -100%;
+    transition: 1.5s;
+
+}
+.one-2 div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    white-space: nowrap;
+}
+.one-2 div p{
+    color: white;
+
+}
+h1{
+    color: white;
+    font-family: 'Domine', serif;
+}
+.two-2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    transition: 1.5s;
+    right: -100%;
+}
+.agent-container-2:hover .one-2{
+ right: 0;
+}
+.agent-container-2:hover .two-2{
+    right: 100%;
+}
+.agent-container-3{
+    width: 300px;
+    height: 400px;
+    background-image: url("./images/3.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position-x: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    overflow: hidden;
+    /* background-size: 100% 100%; */
+}
+
+
+.one-3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    right: -100%;
+    transition: 1.5s;
+
+}
+.one-3 div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    white-space: nowrap;
+}
+.one-3 div p{
+    color: white;
+
+}
+h1{
+    color: white;
+    font-family: 'Domine', serif;
+}
+.two-3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    transition: 1.5s;
+    right: -100%;
+}
+.agent-container-3:hover .one-3{
+ right: 0;
+}
+.agent-container-3:hover .two-3{
+    right: 100%;
+}
+
+.signup-container{
+    width: 100%;
+    margin-top: 8rem;
+    height: 80vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.466)), url("./images/pexels-thirdman-8485845.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mail-container{
+ /* border: 2px solid red; */
+ width: 50%;
+ text-align: center;
+}
+.mail-container p{
+    color: white;
+    margin: 12px 0px;
+}
+.mail-container h1{
+    margin: 20px 0px;
+}
+.names{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 2rem;
+}
+.first input{
+    width: 250px;
+    background-color: white;
+    color: black;
+    height: 20px;
+    padding: 10px;
+ border: none;
+    outline: none;
+ border-radius: 4px;
+
+}
+
+.last input{
+    width: 250px;
+    background-color: white;
+    color: black;
+    height: 20px;
+    padding: 10px;
+    border: none;
+ border-radius: 4px;
+    outline: none;
+}
+
+.email input{
+    width: 542px;
+    padding: 10px;
+    height: 20px;
+    border: none;
+    outline: none;
+ border-radius: 4px;
+
+}
+.sign-btn{
+    padding: 0.8rem 1.5rem;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.795);
+    padding: 2rem 0px;
+}
+.ft-logo h1{
+    color: black;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: 'Domine', serif;
+}
+.news-letter h1{
+   color: black;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.news-letter{
+    text-align: center;
+}
+.news-letter input{
+     margin: 20px 0px;
+    width: 300px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid gray;
+    background-color: transparent;
+
+}
+
+.ft-btn{
+    background-color: black;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.copyright{
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+@media(max-width:450px){
+   .header{
+         height: 10vh;
+    }
+  .logo{
+    z-index: 1;
+  }
+.links{
+    display:none;
+     flex-direction: column;
+     width: 100%;
+     background-color: white;
+     color: black;
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 60vh
+}
+.links.show{
+    display: flex;
+}
+   
+    .mob-menu{
+        display: block;
+        z-index:1;
+    }
+    .hero-text h1{
+        font-size: 25px;
+    }
+    .agent{
+        height: 150vh;
+        padding: 4rem 0px;
+    }
+    .names{
+        flex-direction: column;
+    }
+    .email {
+        width: 250px;
+        margin-left: -1.5rem;
+    }
+    .email input{
+        width: 100%;
+    }
+}
