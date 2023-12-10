@@ -907,6 +907,7 @@ span{
     }
     .mail-container{
         width: 100%;
+        text-align: center;
     }
     .email {
         width: 350px;
