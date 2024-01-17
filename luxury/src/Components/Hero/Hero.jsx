@@ -21,7 +21,7 @@ const Hero = () => {
   backgroundImage: ` url(./Assets/dream.jpg)`,
   backgroundPosition: "center",
   backgroundSize: "cover",
-  // backgroundAttachment:"fixed"
+  backgroundAttachment:"fixed"
 }}>
     <div className="dream-text">
     <h1> Help You Achieve  <br /> 

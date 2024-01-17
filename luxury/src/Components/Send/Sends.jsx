@@ -7,7 +7,7 @@ const Sends = () => {
   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.466)), url(./Assets/send.jpg)`,
   backgroundPosition: "center",
   backgroundSize: "cover",
-  // backgroundAttachment:"fixed",
+  backgroundAttachment:"fixed",
   backgroundPositionY:"15%"
 }}>
         <div className="mail-container">

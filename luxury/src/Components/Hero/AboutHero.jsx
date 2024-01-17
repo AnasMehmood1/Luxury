@@ -23,7 +23,7 @@ const AboutHero = () => {
   backgroundImage: ` url(./Assets/dream.jpg)`,
   backgroundPosition: "center",
   backgroundSize: "cover",
-  // backgroundAttachment:"fixed"
+  backgroundAttachment:"fixed"
 }}>
     <div className="dream-text-about">
     <p>NEW YORK REAL ESTATE AGENT</p>
