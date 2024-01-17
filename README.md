@@ -1,5 +1,4 @@
-
-## Screenshots
+## Preview
 
 ![Real Estate Website Screenshot](./public/Assets/preview.png)
 
