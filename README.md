@@ -26,7 +26,7 @@ To explore the Real Estate Website, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
-3. Run `npm install` to install dependencies.
+3. Run this command npm install react-scripts
 4. Run `npm start` to launch the development server.
 5. Open the website in your preferred web browser.
 
@@ -35,6 +35,9 @@ To explore the Real Estate Website, follow these steps:
 1. Browse through the available property listings.
 2. Click on a property to view detailed information.
 3. Contact real estate agents for inquiries.
+   ## Browser
+
+    For visiting our site just click here https://luxury1.netlify.app/ and go on site 
 
 ## Contributing
 
